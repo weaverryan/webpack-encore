@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 0.34.0
+
+ * [BC BREAK] `css-loader` was upgraded from 3.6.0 to 5.0.1. This may affect
+   your code. See the [4.0 CHANGELOG](https://github.com/webpack-contrib/css-loader/blob/master/CHANGELOG.md#400-2020-07-25)
+   and [5.0 CHANGELOG](https://github.com/webpack-contrib/css-loader/blob/master/CHANGELOG.md#500-2020-10-13)
+   for details. One change is that if you currently `require('./style.css')`,
+   you will now need to `import './styles.css'`.
+
 ## 0.33.0
 
  * [disableCssExtraction()] Added boolean argument to `disableCssExtraction()`
